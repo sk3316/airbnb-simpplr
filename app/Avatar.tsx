@@ -5,7 +5,7 @@
 // const RxAvatar = () => {
 //     return ( 
 //         <Image
-//         className="rounderd-full"
+//         className="rounded-full"
 //         height={30}
 //         width={30}
 //         alt="avatar"

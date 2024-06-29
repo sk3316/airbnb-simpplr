@@ -1,5 +1,5 @@
 // import { Container } from "postcss";
-
+"use client";
 import Logo from "./Logo";
 import Search from "./Search";
 import UserMenu from "./UserMenu";

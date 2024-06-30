@@ -7,10 +7,12 @@ import Image from "next/image";
 import { useCallback, useState } from "react";
 import MenuItem from "./MenuItems";
 import useRegisterModal from "@/app/hooks/useRegisterModal";
+import useLoginModal from "@/app/hooks/useLoginModal";
 import RegisterModal from "../modals/RegisterModal";
 
 const UserMenu = () => {
     const registerModal = useRegisterModal();
+    const loginModal = useLoginModal();
     const [isOpen, setIsOpen] = useState(false);
     const toggleOpen = useCallback(()=>{
         setIsOpen((value)=> !value);
@@ -46,7 +48,7 @@ const UserMenu = () => {
             <div className="absolute rounded-xl shadow-md md:w-3/4 bg-white overflow-hidden right-0 top-12 w-[40vw] text-sm">
                 <div className="flex flex-col cursor-pointer">
                     <>
-                    <MenuItem onclick={() => {}}
+                    <MenuItem onclick={loginModal.onOpen}
                     label="Login"/>
                     <MenuItem onclick={registerModal.onOpen}
                     label="Sign Up"/>

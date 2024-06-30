@@ -9,6 +9,7 @@ import MenuItem from "./MenuItems";
 import useRegisterModal from "@/app/hooks/useRegisterModal";
 import useLoginModal from "@/app/hooks/useLoginModal";
 import RegisterModal from "../modals/RegisterModal";
+import { FaGlobe } from "react-icons/fa";
 
 const UserMenu = () => {
     const registerModal = useRegisterModal();
@@ -26,6 +27,12 @@ const UserMenu = () => {
           className="hidden md:block text-sm font-semibold py-3 px-4 rounded-full hover:bg-neutral-100 transition cursor-pointer"
         >
           Airbnb Your Home
+        </div>
+        <div
+        //   onClick={}
+          className="hidden md:block text-sm font-semibold py-3 px-4 rounded-full hover:bg-neutral-100 transition cursor-pointer"
+        >
+          <FaGlobe />
         </div>
         <div
           onClick={toggleOpen}
@@ -48,10 +55,18 @@ const UserMenu = () => {
             <div className="absolute rounded-xl shadow-md md:w-3/4 bg-white overflow-hidden right-0 top-12 w-[40vw] text-sm">
                 <div className="flex flex-col cursor-pointer">
                     <>
-                    <MenuItem onclick={loginModal.onOpen}
-                    label="Login"/>
+                    <span className="md:font-bold">
                     <MenuItem onclick={registerModal.onOpen}
                     label="Sign Up"/>
+                    </span>
+                    <MenuItem onclick={loginModal.onOpen}
+                    label="Login"/>
+                    <hr/>
+                    <MenuItem onclick={toggleOpen}
+                    label="Airbnb your home"/>
+                    <MenuItem onclick={toggleOpen}
+                    label="Help Center"/>
+
                     </>
                 </div>
             </div>

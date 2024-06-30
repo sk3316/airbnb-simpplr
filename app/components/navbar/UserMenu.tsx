@@ -6,8 +6,11 @@ import { RxAvatar } from "react-icons/rx";
 import Image from "next/image";
 import { useCallback, useState } from "react";
 import MenuItem from "./MenuItems";
+import useRegisterModal from "@/app/hooks/useRegisterModal";
+import RegisterModal from "../modals/RegisterModal";
 
 const UserMenu = () => {
+    const registerModal = useRegisterModal();
     const [isOpen, setIsOpen] = useState(false);
     const toggleOpen = useCallback(()=>{
         setIsOpen((value)=> !value);
@@ -45,7 +48,7 @@ const UserMenu = () => {
                     <>
                     <MenuItem onclick={() => {}}
                     label="Login"/>
-                    <MenuItem onclick={() => {}}
+                    <MenuItem onclick={RegisterModal.onOpen}
                     label="Sign Up"/>
                     </>
                 </div>

@@ -1,5 +1,6 @@
 // import { Container } from "postcss";
 "use client";
+import Categories from "./Categories";
 import Logo from "./Logo";
 import Search from "./Search";
 import UserMenu from "./UserMenu";
@@ -17,6 +18,7 @@ const Navbar: React.FC = () => {
           </div>
         </div>
       </div>
+      <Categories/>
     </div>
   );
 };

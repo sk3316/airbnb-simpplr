@@ -48,7 +48,7 @@ const UserMenu = () => {
                     <>
                     <MenuItem onclick={() => {}}
                     label="Login"/>
-                    <MenuItem onclick={RegisterModal.onOpen}
+                    <MenuItem onclick={registerModal.onOpen}
                     label="Sign Up"/>
                     </>
                 </div>

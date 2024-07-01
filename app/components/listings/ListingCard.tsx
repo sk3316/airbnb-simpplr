@@ -67,7 +67,7 @@ const ListingCard = () => {
   return (
     <div
       // onClick={()=> router.push(`/listings/${data}`)}
-      className="col-span-1 cursor-pointer group"
+      className=" cursor-pointer group flex  flex-col"
     >
       <div className="flex flex-col gap-2 w-full">
         <div className="aspect-square w-full relative overflow-hidden rounded-xl">
@@ -93,8 +93,31 @@ const ListingCard = () => {
           icon={FaEye}
           onClick={() =>("see")}
         />
+
+        <div className="aspect-square w-full relative overflow-hidden rounded-xl">
+          <Image
+            fill
+            alt="listing"
+            src="/images/logo.png"
+            className="object-cover h-full w-full group-hover:scale-110 transition"
+          />
+          <div className="absolute top-3 right-3">
+            <HeartButton />
+          </div>
+        </div>
+        <div className="font-semibold text-lg">Europe, Croatia</div>
+        <div className="font-light text-neutral-500">Beach</div>
+        <div className="flex flex-row items-center gap-">
+          <div className="font-semibold">$500</div>
+          <div className="font-light">night</div>
+        </div>
+        <Button
+          outline
+          label="See Property"
+          icon={FaEye}
+          onClick={() =>("see")}
+        />
       </div>
-      {/* Hey are you Listing ? */}
     </div>
   );
 };

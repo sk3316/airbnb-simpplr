@@ -8,9 +8,9 @@ import UserMenu from "./UserMenu";
 const Navbar: React.FC = () => {
   return (
     <div className="fixed w-full bg-white z-10 shadow-sm">
-      <div className="py-4 border-b-[1px]">
+      <div className="py-2 border-b-[1px]">
         {/* container = <div className="max-w-[2520px] mx-auto xl:px-20 md:px-10 sm:px-2 px-4"></div> */}
-        <div className="max-w-[2520px] mx-6 xl:px-10 md:px-6 sm:px-2 px-4">
+        <div className="max-w-[2520px] mx-2 xl:px-8 md:px-4 sm:px-2 px-4">
           <div className="flex flex-row items-center justify-between gap-3 md:gap-0">
             <Logo/>
             <Search/>

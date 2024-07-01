@@ -33,8 +33,8 @@ export default function RootLayout({
           {/* <Modal title="Hello World" isOpen/> */}
           <ToasterProvider/>
           <RentModal/>
-          <RegisterModal/>
           <LoginModal/>
+          <RegisterModal/>
         <Navbar/>
         </ClientOnly>
         {children}</body>

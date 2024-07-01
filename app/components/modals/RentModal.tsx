@@ -21,6 +21,8 @@ import { categories } from '../navbar/Categories';
 // import ImageUpload from '../inputs/ImageUpload';
 import Input from '../inputs/Input';
 import Heading from '../Heading';
+import CategoryInput from '../inputs/CategoryInput';
+import CountrySelect from '../inputs/CountrySelect';
 
 enum STEPS {
   CATEGORY = 0,
@@ -68,9 +70,9 @@ const RentModal = () => {
   const bathroomCount = watch('bathroomCount');
   const imageSrc = watch('imageSrc');
 
-//   const Map = useMemo(() => dynamic(() => import('../Map'), { 
-//     ssr: false 
-//   }), [location]);
+  const Map = useMemo(() => dynamic(() => import('../Map'), { 
+    ssr: false 
+  }), [location]);
 
 
   const setCustomValue = (id: string, value: any) => {
@@ -146,13 +148,13 @@ const RentModal = () => {
       >
         {categories.map((item) => (
           <div key={item.label} className="col-span-1">
-            {/* <CategoryInput
+             <CategoryInput
               onClick={(category) => 
                 setCustomValue('category', category)}
               selected={category === item.label}
               label={item.label}
               icon={item.icon}
-            /> */}
+            />  
           </div>
         ))}
       </div>
@@ -166,14 +168,14 @@ const RentModal = () => {
           title="Where is your place located?"
           subtitle="Help guests find you!"
         />
-        {/* <CountrySelect 
+        <CountrySelect 
           value={location} 
           onChange={(value) => setCustomValue('location', value)} 
-        /> */}
-        {/* <Map center={location?.latlng} /> */}
+        />
+        <Map center={location?.latlng} />
       </div>
     );
-  }
+  } 
 
   if (step === STEPS.INFO) {
     bodyContent = (

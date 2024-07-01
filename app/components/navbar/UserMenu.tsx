@@ -24,8 +24,8 @@ const UserMenu = () => {
 
 
     const onRent = useCallback(() =>{
-      return loginModal.onOpen();
-      rentModal.onOpen();
+      return rentModal.onOpen();
+      // loginModal.onOpen();
     }, 
      [loginModal,rentModal]);
 

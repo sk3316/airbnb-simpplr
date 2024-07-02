@@ -79,10 +79,10 @@ const ListingCard = () => {
             <HeartButton />
           </div>
         </div>
-        <div className="font-semibold text-lg">Europe, Croatia</div>
+        <div className="font-semibold text-lg">Paris, France</div>
         <div className="font-light text-neutral-500">Beach</div>
         <div className="flex flex-row items-center gap-">
-          <div className="font-semibold">$500</div>
+          <div className="font-semibold">$500&nbsp;</div>
           <div className="font-light">night</div>
         </div>
         <Button
@@ -105,10 +105,10 @@ const ListingCard = () => {
             <HeartButton />
           </div>
         </div>
-        <div className="font-semibold text-lg">Europe, Croatia</div>
+        <div className="font-semibold text-lg">Kyoto, Japan</div>
         <div className="font-light text-neutral-500">Beach</div>
         <div className="flex flex-row items-center gap-">
-          <div className="font-semibold">$500</div>
+          <div className="font-semibold">$700&nbsp;</div>
           <div className="font-light">night</div>
         </div>
         <Button
@@ -131,10 +131,10 @@ const ListingCard = () => {
             <HeartButton />
           </div>
         </div>
-        <div className="font-semibold text-lg">Europe, Croatia</div>
-        <div className="font-light text-neutral-500">Beach</div>
+        <div className="font-semibold text-lg">Rome, Italy</div>
+        <div className="font-light text-neutral-500">Windmills</div>
         <div className="flex flex-row items-center gap-">
-          <div className="font-semibold">$500</div>
+          <div className="font-semibold">$200&nbsp;</div>
           <div className="font-light">night</div>
         </div>
         <Button
@@ -157,10 +157,10 @@ const ListingCard = () => {
             <HeartButton />
           </div>
         </div>
-        <div className="font-semibold text-lg">Europe, Croatia</div>
-        <div className="font-light text-neutral-500">Beach</div>
+        <div className="font-semibold text-lg">New York City, United States</div>
+        <div className="font-light text-neutral-500">Modern</div>
         <div className="flex flex-row items-center gap-">
-          <div className="font-semibold">$500</div>
+          <div className="font-semibold">$500&nbsp;</div>
           <div className="font-light">night</div>
         </div>
         <Button
@@ -183,10 +183,10 @@ const ListingCard = () => {
             <HeartButton />
           </div>
         </div>
-        <div className="font-semibold text-lg">Europe, Croatia</div>
-        <div className="font-light text-neutral-500">Beach</div>
+        <div className="font-semibold text-lg">Cape Town, South Africa</div>
+        <div className="font-light text-neutral-500">Lake</div>
         <div className="flex flex-row items-center gap-">
-          <div className="font-semibold">$500</div>
+          <div className="font-semibold">$400&nbsp;</div>
           <div className="font-light">night</div>
         </div>
         <Button

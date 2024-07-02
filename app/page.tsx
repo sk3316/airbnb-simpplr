@@ -22,7 +22,9 @@ export default function Home() {
         <div className="pt-24 grid grid-cols-1 gap-8">
           <div>
             <ListingCard />
+            <br></br>
             <ListingCard2 />
+            <br></br>
             <ListingCard3 />
             {/* // key = {data.id}
 // data = {listing} */}

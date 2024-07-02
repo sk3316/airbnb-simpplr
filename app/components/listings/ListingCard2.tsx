@@ -10,8 +10,8 @@ import Button from "../Button";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { FaEye } from "react-icons/fa";
 
-const ListingCard = () => {
-  // interface ListingCardProps{
+const ListingCard2 = () => {
+  // interface ListingCard2Props{
   //     data: null;
   //     reservation?: null;
   //     onAction?:(id:string) => void;
@@ -21,7 +21,7 @@ const ListingCard = () => {
   //     currentUser?: null;
   // }
 
-  // const ListingCard : React.FC<ListingCardProps>= ({
+  // const ListingCard2 : React.FC<ListingCard2Props>= ({
   //     data,
   //     reservation,
   //     onAction,
@@ -66,14 +66,14 @@ const ListingCard = () => {
   // onClick={()=> router.push(`/listings/${data}`)}
 
   return (
-    <div className=" col-span-1 flex flex-row group gap-5">
-      <div className="cursor-pointer flex flex-col gap-2 w-full">
+    <div className="cursor-pointer col-span-1 flex flex-row group gap-5">
+      <div className="flex flex-col gap-2 w-full">
         <div className="aspect-square w-full relative overflow-hidden rounded-xl">
           <Image
             fill
-            alt="listing1"
-            src="/images/image1.webp"
-            className="object-cover h-full w-full hover:scale-110 transition"
+            alt="listing"
+            src="/images/logo.png"
+            className="object-cover h-full w-full group-hover:scale-110 transition"
           />
           <div className="absolute top-3 right-3">
             <HeartButton />
@@ -93,13 +93,13 @@ const ListingCard = () => {
         />
       </div>
           <br></br>
-      <div className="cursor-pointer flex flex-col gap-2 w-full">
+      <div className="flex flex-col gap-2 w-full">
         <div className="aspect-square w-full relative overflow-hidden rounded-xl">
           <Image
             fill
-            alt="listing2"
-            src="/images/image2.jpg"
-            className="object-cover h-full w-full hover:scale-110 transition"
+            alt="listing"
+            src="/images/logo.png"
+            className="object-cover h-full w-full group-hover:scale-110 transition"
           />
           <div className="absolute top-3 right-3">
             <HeartButton />
@@ -119,13 +119,13 @@ const ListingCard = () => {
         />
       </div>
       <br></br>
-      <div className="cursor-pointer flex flex-col gap-2 w-full">
+      <div className="flex flex-col gap-2 w-full">
         <div className="aspect-square w-full relative overflow-hidden rounded-xl">
           <Image
             fill
-            alt="listing3"
-            src="/images/image3.avif"
-            className="object-cover h-full w-full hover:scale-110 transition"
+            alt="listing"
+            src="/images/logo.png"
+            className="object-cover h-full w-full group-hover:scale-110 transition"
           />
           <div className="absolute top-3 right-3">
             <HeartButton />
@@ -145,13 +145,13 @@ const ListingCard = () => {
         />
       </div>
       <br></br>
-      <div className="cursor-pointer flex flex-col gap-2 w-full">
+      <div className="flex flex-col gap-2 w-full">
         <div className="aspect-square w-full relative overflow-hidden rounded-xl">
           <Image
             fill
-            alt="listing4"
-            src="/images/image4.jpg"
-            className="object-cover h-full w-full hover:scale-110 transition"
+            alt="listing"
+            src="/images/logo.png"
+            className="object-cover h-full w-full group-hover:scale-110 transition"
           />
           <div className="absolute top-3 right-3">
             <HeartButton />
@@ -171,13 +171,13 @@ const ListingCard = () => {
         />
       </div>
       <br></br>
-      <div className="cursor-pointer flex flex-col gap-2 w-full">
+      <div className="flex flex-col gap-2 w-full">
         <div className="aspect-square w-full relative overflow-hidden rounded-xl">
           <Image
             fill
-            alt="listing5"
-            src="/images/image5.webp"
-            className="object-cover h-full w-full hover:scale-110 transition"
+            alt="listing"
+            src="/images/logo.png"
+            className="object-cover h-full w-full group-hover:scale-110 transition"
           />
           <div className="absolute top-3 right-3">
             <HeartButton />
@@ -200,4 +200,4 @@ const ListingCard = () => {
   );
 };
 
-export default ListingCard;
+export default ListingCard2;
